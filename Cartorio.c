@@ -237,6 +237,7 @@ int main() //Tela inicial do Usuário e função principal do código
 		printf("\t1 - Registrar Nomes\n"); //O "\t" coloca um espaçamento à esquerda do código
 		printf("\t2 - Consultar Nomes\n"); //O "\n" pula uma linha
 		printf("\t3 - Deletar Nomes\n\n"); //Ambos "\t" e "\n\n" estão para estilização do código
+		printf("\t4 - Sair do Sistema\n\n");
 		printf("Opção: "); //Fim do menu
 	
 		scanf("%d", &opcao); //Armazenando a escolha do usuário
@@ -255,6 +256,11 @@ int main() //Tela inicial do Usuário e função principal do código
 			
 			case 3:
 			deletar(); //chamada da função de exclusão dos dados
+			break;
+			
+			case 4:
+			printf("Obrigado por utilizar o sistema!\n");
+			return 0;
 			break;
 			
 			default:
